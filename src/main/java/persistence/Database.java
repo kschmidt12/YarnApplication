@@ -1,6 +1,6 @@
 package persistence;
 
-import Utilities.PropertiesLoader;
+import util.PropertiesLoader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
