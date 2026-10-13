@@ -1,6 +1,7 @@
 package persistence;
 
 import entity.User;
+import entity.Yarn;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,25 +11,27 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
+    YarnDao yarnDao;
+    UserDao userDao;
+
 
     @BeforeEach
     void setUp() {
 
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
+        yarnDao = new YarnDao();
+        userDao = new UserDao();
     }
-    UserDao userDao;
 
     @Test
     void getById() {
-        userDao = new UserDao();
         User retrievedUser = userDao.getById(1);
         assertEquals("Katie Schmidt", retrievedUser.getName());
     }
 
     @Test
     void update() {
-        userDao = new UserDao();
         User retrievedUser = userDao.getById(1);
         retrievedUser.setUserName("changedUsername");
         userDao.update(retrievedUser);
@@ -38,7 +41,6 @@ class UserDaoTest {
 
     @Test
     void insert() {
-        userDao = new UserDao();
 
         User user = new User();
         user.setName("Harper Schmidt");
@@ -54,24 +56,25 @@ class UserDaoTest {
 
     @Test
     void delete() {
-        userDao = new UserDao();
 
         User user = new User();
-        user.setName("Deleted User");
-        user.setEmail("deleted@gmail.com");
-        user.setUserName("deleted");
-        user.setPassword("ImGoingToBeDeleted");
-        userDao.insert(user);
 
-        User retrievedUser = userDao.getById(user.getId());
+        User retrievedUser = userDao.getById(1);
+        Yarn retrievedYarn = yarnDao.getById(2);
+
+        assertEquals(retrievedUser.getId(), retrievedYarn.getUser().getId());
+
         userDao.delete(retrievedUser);
         User deletedUser = userDao.getById(user.getId());
         assertNull(deletedUser);
+
+        Yarn yarnDeleted = yarnDao.getById(2);
+        assertNull(yarnDeleted);
+
     }
 
     @Test
     void getAll() {
-        userDao = new UserDao();
         List<User> users = userDao.getAll();
         assertEquals(2, users.size());
 
@@ -79,7 +82,6 @@ class UserDaoTest {
 
     @Test
     void getByPropertyEqual() {
-        userDao = new UserDao();
         List<User> user = userDao.getByPropertyEqual("name", "Katie Schmidt");
         assertEquals(1, user.size());
         assertEquals(1, user.get(0).getId());
@@ -87,7 +89,6 @@ class UserDaoTest {
 
     @Test
     void getByPropertyLike() {
-        userDao = new UserDao();
         List<User> user = userDao.getByPropertyLike("name", "K");
         assertEquals(1, user.size());
         assertEquals(1, user.get(0).getId());
