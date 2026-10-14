@@ -12,13 +12,17 @@
 # Week 7
 - [X] DOA fully tested
 - [X] Log4J is implemented (no System.out.printlns)
+- [X] Create table in database to hold projects - want to make, in process and completed. 
 - [X] Checkpoint 2 completed
 - [ ] AWS Cognito implemented for security 
 
 # Week 8 
 - [ ] Update index JSP
-- [ ] Create table in database to hold projects - want to make, in process and completed. 
 - [ ] User wants to be able to find project ideas with the yarn I have on hand. Implement API here.
+- [ ] Create project controller 
+- [ ] Create project DAO
+- [ ] Create project unit tests
+- [ ] Finalize pick for API
 
 # Week 9
 - [ ] Ensure database is implemented, authentication implemented
@@ -39,6 +43,8 @@
 - [ ] Create find projects JSP with API implemeted.
 - [ ] User wants to update yarn as they have used some or bought more. Create update yarn JSP.
 - [ ] User wants to delete yarn as they have used it. Create delete yarn JSP.
+- [ ] User wants to be able to add. Create view JSPs.
+- [ ] User wants to be able to update projects. Create update JSP. 
 
 # Week 12
 - [ ] Finish any work that needs completing.
