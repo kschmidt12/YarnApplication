@@ -49,3 +49,7 @@
 # Week 12
 - [ ] Finish any work that needs completing.
 - [ ] Prepare for presentation.
+
+# Week 13
+- [ ] Create video demo and add to readME.
+- [ ] Create presentation 
