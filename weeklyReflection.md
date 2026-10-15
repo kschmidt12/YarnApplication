@@ -15,3 +15,13 @@
 -Deployed on AWS, struggled with this but it was probably 2 hours spend only to find I didn't have my database as public
 -Need to go back and fix Week 5 still 
 -Need to work on commit comments 
+
+## Week 7
+-10/15/16 time spend - 4-5 hours
+
+-cognito properties and config files added
+-Cert and Key created but my browser does not seem to like that I signed them myself
+-Cognito set up completed on AWS - sign up, sign in and redirect working. 
+-User pools working on AWS 
+-Project plan, README and design documents updated. 
+-I believe I made some good progress with my commit comments this week but it was more working in AWS rather than coding. 
