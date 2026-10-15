@@ -14,7 +14,7 @@
 - [X] Log4J is implemented (no System.out.printlns)
 - [X] Create table in database to hold projects - want to make, in process and completed. 
 - [X] Checkpoint 2 completed
-- [ ] AWS Cognito implemented for security 
+- [X] AWS Cognito implemented for security 
 
 # Week 8 
 - [ ] Update index JSP
@@ -47,6 +47,7 @@
 - [ ] User wants to be able to update projects. Create update JSP. 
 
 # Week 12
+- [ ] User wants to be able to delete projects. Create delete project JSP.
 - [ ] Finish any work that needs completing.
 - [ ] Prepare for presentation.
 

@@ -32,3 +32,6 @@
 
 ## Update Password
 - User wants to be able to update password to protect yarn information. 
+
+## Remove Projects
+- User wants to be able to delete projects if they made an error entering it or changed their mind. 
