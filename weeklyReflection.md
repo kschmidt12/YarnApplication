@@ -25,3 +25,12 @@
 -User pools working on AWS 
 -Project plan, README and design documents updated. 
 -I believe I made some good progress with my commit comments this week but it was more working in AWS rather than coding. 
+
+## Week 8
+-10/22/26 total time spent - 10 hours
+
+-Tavily chosen for API 
+-Tavily implemented through response, results, dao and test made
+-Generic Doa created
+-Generic Doa test created 
+-Right back to needing to work on commit comments

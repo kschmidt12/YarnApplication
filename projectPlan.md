@@ -16,15 +16,15 @@
 - [X] Checkpoint 2 completed
 - [X] AWS Cognito implemented for security 
 
-# Week 8 
-- [ ] Update index JSP
-- [ ] User wants to be able to find project ideas with the yarn I have on hand. Implement API here.
-- [ ] Create project controller 
-- [ ] Create project DAO
-- [ ] Create project unit tests
-- [ ] Finalize pick for API
+# Week 8
+- [X] User wants to be able to find project ideas with the yarn I have on hand. Implement API here.
+- [X] Create generic DAO
+- [X] Create generic unit tests
+- [X] Finalize pick for API
 
 # Week 9
+- [ ] Update index JSP
+- [ ] Create project controller
 - [ ] Ensure database is implemented, authentication implemented
 - [ ] Create the production environment, deploy, test
 - [ ] User wants to be able to sign up to an application to store my yarn data. Create sign up JSP.
