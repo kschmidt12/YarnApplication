@@ -25,32 +25,54 @@
 # Week 9
 - [ ] Update index JSP
 - [ ] Create project controller
+- [ ] Create Project entity with relationships to User and Yarn.
+- [ ] Create Project DAO.
+- [ ] Create unit tests for Project DAO.
 - [ ] Ensure database is implemented, authentication implemented
 - [ ] Create the production environment, deploy, test
-- [ ] User wants to be able to sign up to an application to store my yarn data. Create sign up JSP.
-- [ ] User wants to be able to sign in and access my secured yarn data. Create sign in JSP.
 - [ ] Checkpoint 3 completed
 
 # Week 10
-- [ ] Create a view yarns database with table of yarns that can be clicked on, routing to view yarn.
-- [ ] User wants to be able to find the description of my yarn, weight and hook size. Create view yarn JSP. This will have a table displaying them, each yarn will have a delete button on the side, directing to a delete page. 
-- [ ] Create change password JSP.
-- [ ] User wants to enter the project information I'm working on to come back and restart at a later date. Create view projects jsp.
-- [ ] Create edit project JSP - create the project, edit with information and complete project options. 
+- [ ] Create viewYarns.jsp to display a table of the user's yarn.
+- [ ] Create ViewYarns controller to retrieve yarn inventory.
+- [ ] Create viewYarn.jsp to display individual yarn details.
+- [ ] Create ViewYarn controller to retrieve yarn by ID.
+- [ ] Add links to update and delete individual yarn.
+- [ ] Test retrieving yarn from the database.
 
 # Week 11
-- [ ] User wants to enter yarn into the yarn database. Create enter yarn JSP.
-- [ ] Create find projects JSP with API implemeted.
+- [ ] User wants to enter yarn into the yarn database. Create enterYarn.jsp.
+- [ ] Create CreateYarn controller to save yarn to the database.
 - [ ] User wants to update yarn as they have used some or bought more. Create update yarn JSP.
-- [ ] User wants to delete yarn as they have used it. Create delete yarn JSP.
-- [ ] User wants to be able to add. Create view JSPs.
-- [ ] User wants to be able to update projects. Create update JSP. 
+- [ ] Create UpdateYarn controller to save changes.
 
 # Week 12
 - [ ] User wants to be able to delete projects. Create delete project JSP.
-- [ ] Finish any work that needs completing.
-- [ ] Prepare for presentation.
+- [ ] Create DeleteYarn controller to remove yarn.
+- [ ] Create findProjects.jsp with API implemented.
+- [ ] Create FindProjects controller to retrieve project ideas using the API.
+- [ ] Test API results and yarn deletion.
 
 # Week 13
-- [ ] Create video demo and add to readME.
-- [ ] Create presentation 
+- [ ] Create viewProjects.jsp to display saved projects.
+- [ ] Create ViewProjects controller to retrieve projects.
+- [ ] Create editProject.jsp to enter new project information.
+- [ ] Create CreateProject controller to save projects.
+
+# Week 14 
+- [ ] Create updateProject.jsp to update project information and completion status.
+- [ ] Create UpdateProject controller to save project changes.
+- [ ] Create deleteProject.jsp to confirm deletion.
+- [ ] Create DeleteProject controller to remove projects.
+
+# Week 15 
+- [ ] Test all CRUD functionality for Yarn and Project.
+- [ ] Verify users can only view and modify their own records.
+- [ ] Test JSP navigation, form submissions, and validation.
+- [ ] Test application in production environment.
+- [ ] Finish any incomplete items from previous weeks.
+
+# Week 16 
+- [ ] Create video demonstration and add to README.
+- [ ] Create final presentation.
+- [ ] Submit!
