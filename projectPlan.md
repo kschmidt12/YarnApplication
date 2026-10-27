@@ -45,6 +45,7 @@
 - [ ] Create CreateYarn controller to save yarn to the database.
 - [ ] User wants to update yarn as they have used some or bought more. Create update yarn JSP.
 - [ ] Create UpdateYarn controller to save changes.
+- [ ] Create startup servlet to load cognito properties a single time
 
 # Week 12
 - [ ] User wants to be able to delete projects. Create delete project JSP.
