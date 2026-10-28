@@ -26,8 +26,6 @@
 - [ ] Update index JSP
 - [ ] Create project controller
 - [ ] Create Project entity with relationships to User and Yarn.
-- [ ] Create Project DAO.
-- [ ] Create unit tests for Project DAO.
 - [ ] Ensure database is implemented, authentication implemented
 - [ ] Create the production environment, deploy, test
 - [ ] Checkpoint 3 completed
