@@ -20,7 +20,8 @@ public class yarnResource {
     @GET
     @Produces("application/json")
     public Response getAllYarn() {
-
+        //https://stleary.github.io/JSON-java/org/json/JSONObject.html
+        //https://stleary.github.io/JSON-java/org/json/JSONArray.html
         List<Yarn> yarns = yarnDao.getAll();
         JSONArray jsonArray = new JSONArray();
 
