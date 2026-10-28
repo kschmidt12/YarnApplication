@@ -11,6 +11,7 @@
         <h3>Welcome ${userName}</h3>
     </c:otherwise>
 </c:choose>
+<a href="search.jsp">Search Users</a>
 </body>
 </html>
 </body>
