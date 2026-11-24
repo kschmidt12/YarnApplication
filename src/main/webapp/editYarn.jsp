@@ -29,14 +29,14 @@
     <div class="mb-3">
         <label for="yarnSize" class="form-label">Yarn Weight</label>
         <select class="form-select" id="yarnSize" name="yarnSize" required>
-            <option value="0" ${yarn.yarnSize == 0 ? 'selected' : ''}>0 - Lace</option>
-            <option value="1" ${yarn.yarnSize == 1 ? 'selected' : ''}>1 - Super Fine</option>
-            <option value="2" ${yarn.yarnSize == 2 ? 'selected' : ''}>2 - Fine</option>
-            <option value="3" ${yarn.yarnSize == 3 ? 'selected' : ''}>3 - Light</option>
-            <option value="4" ${yarn.yarnSize == 4 ? 'selected' : ''}>4 - Medium (Worsted)</option>
-            <option value="5" ${yarn.yarnSize == 5 ? 'selected' : ''}>5 - Bulky</option>
-            <option value="6" ${yarn.yarnSize == 6 ? 'selected' : ''}>6 - Super Bulky</option>
-            <option value="7" ${yarn.yarnSize == 7 ? 'selected' : ''}>7 - Jumbo</option>
+            <option value="0 - Lace" ${yarn.yarnSize == '0 - Lace' ? 'selected' : ''}>0 - Lace</option>
+            <option value="1 - Super Fine" ${yarn.yarnSize == '1 - Super Fine' ? 'selected' : ''}>1 - Super Fine</option>
+            <option value="2 - Fine" ${yarn.yarnSize == '2 - Fine' ? 'selected' : ''}>2 - Fine</option>
+            <option value="3 - Light" ${yarn.yarnSize == '3 - Light' ? 'selected' : ''}>3 - Light</option>
+            <option value="4 - Medium(Worsted)" ${yarn.yarnSize == '4 - Medium(Worsted)' ? 'selected' : ''}>4 - Medium (Worsted)</option>
+            <option value="5 - Bulky" ${yarn.yarnSize == '5 - Bulky' ? 'selected' : ''}>5 - Bulky</option>
+            <option value="6 - Super Bulky" ${yarn.yarnSize == '6 - Super Bulky' ? 'selected' : ''}>6 - Super Bulky</option>
+            <option value="7 - Jumbo" ${yarn.yarnSize == '7 - Jumbo' ? 'selected' : ''}>7 - Jumbo</option>
         </select>
     </div>
     <div class="mb-3">

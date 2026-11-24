@@ -104,8 +104,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             req.getSession().setAttribute("userName", user.getUserName());
             req.getSession().setAttribute("userId", user.getId());
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
-            dispatcher.forward(req, resp);
+            resp.sendRedirect("dashboard");
 
         } catch (JWTVerificationException e) {
             logger.error("Token validation failed.", e);

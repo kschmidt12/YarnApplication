@@ -4,7 +4,7 @@
 <body>
 
 <div class="container mt-5 text-center">
-    <h1>Welcome to My Yarn Stash!</h1>
+    <h1>Welcome to The Stash!</h1>
     <p>Manage your yarn inventory and keep track of your projects.</p>
 
     <c:choose>
