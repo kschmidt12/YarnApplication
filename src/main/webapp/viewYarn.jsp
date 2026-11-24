@@ -9,6 +9,7 @@
   <body>
   <div class="container-fluid">
       <h2>Yarn Stash </h2>
+      <a href="addYarn" class="btn btn-success mb-3">Add New Yarn</a>
      <table class ="table table-striped table-bordered">
              <thead>
 
@@ -19,6 +20,8 @@
                  <th>Yarn Weight/Size</th>
                  <th>Recommended Hook Size</th>
                  <th>Bought From</th>
+                 <th>Update Yarn</th>
+                 <th>Delete Yarn</th>
              </tr>
              </thead>
 
@@ -31,6 +34,19 @@
                   <td>${yarn.yarnSize}</td>
                   <td>${yarn.hookSize}</td>
                   <td>${yarn.boughtFrom}</td>
+                  <td>
+                    <a href="editYarn?id=${yarn.id}"
+                    class="btn btn-warning btn-sm">Edit</a>
+                 </td>
+                <td>
+                     <form action="deleteYarn" method="post" class="d-inline"
+                           onsubmit="return confirm('Are you sure you want to delete this yarn?');">
+                         <input type="hidden" name="id" value="${yarn.id}">
+                         <button type="submit" class="btn btn-danger btn-sm">
+                             Delete
+                         </button>
+                     </form>
+                </td>
              </tr>
              </c:forEach>
              </tbody>
