@@ -12,9 +12,25 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/*
+View yarn Servlet
+ */
 @WebServlet(urlPatterns = {"/viewYarn"})
 public class ViewYarn extends HttpServlet {
 
+    /**
+     *
+     * @param req   an {@link HttpServletRequest} object that
+     *                  contains the request the client has made
+     *                  of the servlet
+     *
+     * @param resp  an {@link HttpServletResponse} object that
+     *                  contains the response the servlet sends
+     *                  to the client
+     *
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest req,
                          HttpServletResponse resp)

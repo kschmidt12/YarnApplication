@@ -8,7 +8,7 @@
   </head>
   <body>
   <div class="container-fluid">
-      <h2>Search Results: </h2>
+      <h2>Yarn Stash </h2>
      <table class ="table table-striped table-bordered">
              <thead>
 
@@ -25,12 +25,12 @@
              <tbody>
              <c:forEach var="yarn" items="${yarns}">
              <tr>
-                  <td>${yarn.brandname}</td>
+                  <td>${yarn.brandName}</td>
                   <td>${yarn.color}</td>
-                  <td>${yarn.yarnamount}</td
-                  <td>${yarn.yarnsize}</td>
-                  <td>${yarn.hooksize}</td>
-                  <td>${yarn.boughtfrom}</td>
+                  <td>${yarn.yarnAmount}</td>
+                  <td>${yarn.yarnSize}</td>
+                  <td>${yarn.hookSize}</td>
+                  <td>${yarn.boughtFrom}</td>
              </tr>
              </c:forEach>
              </tbody>
