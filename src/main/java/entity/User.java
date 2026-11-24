@@ -33,8 +33,6 @@ public class User {
     @Column(name = "username")
     private String userName;
 
-    @Column(name = "password")
-    private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Yarn> yarnList = new ArrayList<>();
@@ -59,7 +57,6 @@ public class User {
         this.name = name;
         this.email = email;
         this.userName = userName;
-        this.password = password;
     }
 
     public void addYarn(Yarn yarn) {
@@ -150,24 +147,6 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * Gets password.
-     *
-     * @return the password
-     */
-    public String getPassword() {
-        return password;
-    }
-
-    /**
-     * Sets password.
-     *
-     * @param password the password
-     */
-    public void setPassword(String password) {
-        this.password = password;
     }
 
 

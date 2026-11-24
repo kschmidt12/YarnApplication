@@ -26,9 +26,9 @@
 - [ ] Update index JSP
 - [ ] Create project controller
 - [ ] Create Project entity with relationships to User and Yarn.
-- [ ] Ensure database is implemented, authentication implemented
-- [ ] Create the production environment, deploy, test
-- [ ] Checkpoint 3 completed
+- [X] Ensure database is implemented, authentication implemented
+- [X] Create the production environment, deploy, test
+- [X] Checkpoint 3 completed
 
 # Week 10
 - [ ] Create viewYarns.jsp to display a table of the user's yarn.

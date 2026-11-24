@@ -84,7 +84,6 @@ class GenericDaoTest {
         user.setName("Harper Schmidt");
         user.setEmail("harper@gmail.com");
         user.setUserName("HarperSchmidt");
-        user.setPassword("ILoveChickenNuggets");
         userDao.insert(user);
 
         User newUser = userDao.getById(user.getId());
