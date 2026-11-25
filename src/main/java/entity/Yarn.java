@@ -3,6 +3,9 @@ package entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity(name = "Yarn")
 @Table(name = "yarn_log")
 
@@ -36,6 +39,9 @@ public class Yarn {
     @ManyToOne
     @JoinColumn(name ="user_id")
     private User user;
+
+    @ManyToMany(mappedBy = "yarns")
+    private Set<Project> projects = new HashSet<>();
 
     /**
      * Instantiates yarn

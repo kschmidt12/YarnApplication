@@ -34,3 +34,15 @@
 - Generic Doa created
 - Generic Doa test created 
 - Right back to needing to work on commit comments
+
+## Week 13
+-11/25/26
+
+- I put this on hold while we did our group project.
+- It took a bit to get back into the grove of it and remember what I had previously done, project plan helped with that. 
+- Major changes made - Added view, edit yarn JSP and servlets
+- Added view, edit and find projects JSP and servlets
+- Delete yarn and project did not need their own JSP so only servlet was added, I added this directly to the view pages with a pop up warning.
+- I deleted search users as this was from a weekly assignment and not needed in this project
+- I basically did the majority of the CRUD this week, after working on the team project I felt far more confident in.
+- Plan is to work on design and AWS in the coming weeks. AWS is working but I haven't deployed there, testing has only been local with the exception of the AWS database. 

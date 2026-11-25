@@ -9,6 +9,8 @@
   <body>
   <div class="container-fluid">
       <h2>Yarn Stash </h2>
+      <a href="dashboard" class="btn btn-secondary mb-3">
+              Back to The Stash</a>
       <a href="addYarn" class="btn btn-success mb-3">Add New Yarn</a>
      <table class ="table table-striped table-bordered">
              <thead>
